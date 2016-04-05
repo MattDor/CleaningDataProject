@@ -22,7 +22,7 @@ featureNames <- read.delim("features.txt",header=F,sep="",colClasses=c("integer"
 mergedData  <- rbind(testData,trainData)
 
 #
-# Set activity labels as variable names
+# Set activity labels as variable names to make them meaningful
 #
 names(mergedData) <- featureNames[,2]
 
